@@ -13,7 +13,6 @@ RUN conda create -y -n py3.10 python=3.10 && \
 	loguru && \
     conda install -n py3.10 -y \
     faiss-gpu && \
-    conda clean --all && \
-    echo "source conda activate py3.8" >> ~/.bashrc
+    conda clean --all
 
 CMD [ "conda", "run", "-n", "py3.10", "bash" ]
