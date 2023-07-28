@@ -6,7 +6,5 @@ RUN pip install --no-cache-dir \
 	sentence_transformers \
 	list \
 	faiss-gpu \
-	loguru \
-	
-
+	loguru
 COPY . .
